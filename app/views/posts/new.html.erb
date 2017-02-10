@@ -1,0 +1,97 @@
+<h1> Make Something</h1>
+
+<%= form_for @post do |f| %>
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %><br>
+    <%= f.label :Phone %> <br>
+    <%= f.text_field :Phone %><br>
+    <%= f.label :Adress %> <br>
+    <%= f.text_field :Adress %><br>
+    <%= f.label(:Veh_Year, "Veh/Year")   %> <br>
+    <%= f.text_field :Veh_Year %><br>
+    <%= f.label :Make %> <br>
+    <%= f.text_field :Make %><br>
+    <%= f.label :Model  %> <br>
+    <%= f.text_field :Model %><br>
+    <%= f.label(:LicPlate, "License Plate") %> <br>
+    <%= f.text_field :LicPlate %><br>
+    <%= f.label :Miles %> <br>
+    <%= f.text_field :Miles %><br>
+    <%= f.label(:VIN, "VIN") %> <br>
+    <%= f.text_field :VIN %>
+  </p>
+
+<h3>Payment Method</h3>
+  <p>
+    <%= f.label :Visa %> 
+    <%= f.check_box :Visa, {}, true, false %> <br />
+    <%= f.label :MasterCard %>
+    <%= f.check_box :MasterCard, {}, true, false %> <br />
+    <%= f.label :Discover %>
+    <%= f.check_box :Discover, {}, true, false %> <br />
+    <%= f.label :Cash %>
+    <%= f.check_box :Cash, {}, true, false %> <br />
+  </p>
+
+<h3>__________</h3>
+  <p>
+    <%= f.label(:Pair,"PAIR")%> 
+    <%= f.check_box :Pair, {}, true, false %> <br />
+    <%= f.label(:Air,"AIR")%> 
+    <%= f.check_box :Air, {}, true, false %> <br />
+    <%= f.label(:Acl,"ACL")%> 
+    <%= f.check_box :Acl, {}, true, false %> <br />
+    <%= f.label(:Tc_cac,"TC/CAC")%> 
+    <%= f.check_box :Tc_cac, {}, true, false %> <br />
+    <%= f.label(:Efe,"EFE")%> 
+    <%= f.check_box :Efe, {}, true, false %> <br />
+    <%= f.label(:Egr,"EGR")%> 
+    <%= f.check_box :Egr, {}, true, false %> <br />
+    <%= f.label(:Can,"CAN")%> 
+    <%= f.check_box :Can, {}, true, false %> <br />
+    <%= f.label(:Cat,"CAT")%> 
+    <%= f.check_box :Cat, {}, true, false %> <br />
+    <%= f.label(:Mil,"MIL")%> 
+    <%= f.check_box :Mil, {}, true, false %> <br />
+    <%= f.label(:O2s,"O2S")%> 
+    <%= f.check_box :O2s, {}, true, false %> <br />
+    <%= f.label(:Pcv,"PCV")%> 
+    <%= f.check_box :Pcv, {}, true, false %> <br />
+    <%= f.label :Timing%> 
+    <%= f.check_box :Timing, {}, true, false %> <br />
+</p>
+
+<H3>Fees:</H3>
+  <p>
+   <%= f.label(:CASmog, "California Smog Inspection") %> <br>
+    <%= f.text_field :CASmog %><br>
+    <%= f.label(:CAInsp, "California Smog Insp./ Heavy Duty Vehicles") %> <br>
+    <%= f.text_field :CAInsp %><br>
+    <%= f.label(:VIN2, "VIN") %> <br>
+    <%= f.text_field :VIN2 %><br>
+    <%= f.label(:CASmogCert, "California Smog Certificate") %> <br>
+    <%= f.text_field :CASmogCert %><br>
+    <%= f.label(:PreInsp, "Pre-Inspection") %> <br>
+    <%= f.text_field :PreInsp %><br>
+    <%= f.label(:ReInsp, "Re-Inspection") %> <br>
+    <%= f.text_field :ReInsp %><br>
+    <%= f.label(:EngCover, "Remove Eng. Cover (If Needed) Vans") %> <br>
+    <%= f.text_field :EngCover %><br>
+    <%= f.label(:Other, "Other") %> <br>
+    <%= f.text_field :Other %><br>
+    <%= f.label(:Evap, "Evap. Test") %> <br>
+    <%= f.text_field :Evap %><br>
+    <%= f.label(:Est, "Estimates") %> <br>
+    <%= f.text_field :Est %><br>
+    <%= f.label(:GasCap, "Gas Cap(s)") %> <br>
+    <%= f.text_field :GasCap %><br>
+    <%= f.label(:Mis, "Miscellaneous") %> <br>
+    <%= f.text_field :Mis %><br>
+    <%= f.label(:Tax, "Tax") %> <br>
+    <%= f.text_field :Tax %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
