@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170212091546) do
+ActiveRecord::Schema.define(version: 20170212180919) do
 
   create_table "posts", force: :cascade do |t|
     t.string "Name"
@@ -50,7 +50,9 @@ ActiveRecord::Schema.define(version: 20170212091546) do
     t.string "Est",        default: "0"
     t.string "GasCap",     default: "0"
     t.string "Mis",        default: "0"
-    t.string "Tax",        default: "9.75"
+    t.string "Tax",        default: ".0975"
+    t.float  "TotalWtax"
+    t.float  "Total"
   end
 
 end

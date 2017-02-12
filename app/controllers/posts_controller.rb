@@ -24,6 +24,7 @@
     @post = Post.new(article_params)
     if @post.save
       flash[:notice] = "Post was successfully Created"
+      @post.totalcost
       redirect_to post_path(@post)
     else
       render 'new'
@@ -39,10 +40,7 @@
     
   end
 
-  def totalcost
-    @total=((@post.CASmog.to_f ) + (@post.CAInsp.to_f ) + (@post.VIN2.to_f ) + (@post.CASmogCert.to_f ) + (@post.PreInsp.to_f ) + (@post.ReInsp.to_f ) + (@post.EngCover.to_f ) + (@post.Other.to_f ) + (@post.Evap.to_f ) + (@post.Est.to_f ) + (@post.GasCap.to_f ) + (@post.Mis.to_f ))
-
-  end  
+   
 
 
 
